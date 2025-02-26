@@ -3,28 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The Melodic Blue/family ties</title>
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="./styes.css">
+    <!-- Imported Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- Linked Tailwind -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <header>
+    <header class="head_content">
+
         <div class="album_name">
-            <h1>melodic blue</h1>
+            <h1 class="text-5xl">the melodic blue</h1>
         </div>
 
         <div class="nav_utils">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 20 20"><path fill="currentColor" d="M12.2 13.6a7 7 0 1 1 1.4-1.4l5.4 5.4l-1.4 1.4zM3 8a5 5 0 1 0 10 0A5 5 0 0 0 3 8"/></svg>
 
+            <input class="searchbar" type="text" placeholder="search">
+
+            <svg id="menu_button" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 20 20"><path fill="currentColor" d="M1 3v2h18V3zm0 8h18V9H1zm0 6h18v-2H1z"/></svg>
         </div>
     </header>
     <main>
         <section class="main_content">
-            <div class="album_imgs">
 
+            <section class="product_info">
+
+                <div class="album_imgs">
+
+                    <h2 class="text-3xl song_title">family ties</h2>
+
+                    <div class="main_pic">
+                        <img class="rounded-lg" src="./imgs/mel_blue_cover.jpg" alt="The Melodic Blue Album Cover">
+                    </div>
+
+                    <div class="side_pics">
+                        <div class="sm_pic">
+                            <img class="rounded-lg" src="./imgs/mel_blue_cover.jpg" alt="The Melodic Blue Album Cover">
+                        </div>
+                        <div class="sm_pic">
+                            <img class="rounded-lg" src="./imgs/mel_blue_cover.jpg" alt="The Melodic Blue Album Cover">
+                        </div>
+                        <div class="sm_pic">
+                            <img class="rounded-lg shadow-lg" src="./imgs/mel_blue_cover.jpg" alt="The Melodic Blue Album Cover">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="album_info">
+
+                    <div class="info_sec">
+                        <h3 class="info_header">Small Header</h3>
+                        <p class="info_paragraph">Info related</p>
+                    </div>
+
+                    <div class="info_sec">
+                        <h3 class="info_header">Small Header</h3>
+                        <p class="info_paragraph">Info related</p>
+                    </div>
+
+                    <div class="info_sec">
+                        <h3 class="info_header">Small Header</h3>
+                        <p class="info_paragraph">Info related</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <div class="divider">
+                <img id="div_img" src="./imgs/layered-steps-haikei.svg" alt="svg divider">
             </div>
 
-            <div class="album_info">
+            <section class="other_songs">
+                <div class="song_card rounded-lg">
+                    <div class="sm_pic">
+                        <img class="rounded-lg" src="./imgs/mel_blue_cover.jpg" alt="The Melodic Blue Album Cover">
+                    </div>
+                    <h2 class="text-xl song_title">name</h2>
+                    <p class="song_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque sit perspiciatis aliquid sed ipsam amet ipsa reprehenderit nemo iusto soluta nostrum exercitationem consequatur, vero commodi repudiandae aspernatur error dolore voluptates?</p>
+                </div>
+                <div class="song_card rounded-lg">
+                    <div class="sm_pic">
+                        <img class="rounded-lg" src="./imgs/mel_blue_cover.jpg" alt="The Melodic Blue Album Cover">
+                    </div>
+                    <h2 class="text-xl song_title">name</h2>
+                    <p class="song_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque sit perspiciatis aliquid sed ipsam amet ipsa reprehenderit nemo iusto soluta nostrum exercitationem consequatur, vero commodi repudiandae aspernatur error dolore voluptates?</p>
+                </div>
+                <div class="song_card rounded-lg">
+                    <div class="sm_pic">
+                        <img class="rounded-lg" src="./imgs/mel_blue_cover.jpg" alt="The Melodic Blue Album Cover">
+                    </div>
+                    <h2 class="text-xl song_title">name</h2>
+                    <p class="song_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque sit perspiciatis aliquid sed ipsam amet ipsa reprehenderit nemo iusto soluta nostrum exercitationem consequatur, vero commodi repudiandae aspernatur error dolore voluptates?</p>
+                </div>
+            </section>
 
+            <div class="music_vid">
+                <iframe width="1120" height="630" src="https://www.youtube.com/embed/v6HBZC9pZHQ?si=rUhfUsbaNTuMQqi9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
+
         </section>
     </main>
     <footer>
@@ -32,7 +115,7 @@
 
         </div>
         <div class="website_info">
-            
+
         </div>
     </footer>
 </body>
