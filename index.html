@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Melodic Blue/family ties</title>
+    <title>family ties</title>
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./styes.css">
     <!-- Imported Font -->
@@ -14,33 +14,47 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <header class="head_content">
 
+    <!-- Header contains album name and navigation tools -->
+    <header class="head_content">
+        
+        <!-- album name -->
         <div class="album_name">
             <h1 class="text-5xl">the melodic blue</h1>
         </div>
 
+        <!-- navigation tools -->
         <div class="nav_utils">
+            <!-- search icon -->
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 20 20"><path fill="currentColor" d="M12.2 13.6a7 7 0 1 1 1.4-1.4l5.4 5.4l-1.4 1.4zM3 8a5 5 0 1 0 10 0A5 5 0 0 0 3 8"/></svg>
-
+            
+            <!-- searchbar -->
             <input class="searchbar" type="text" placeholder="search">
 
+            <!-- menu icon -->
             <svg id="menu_button" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 20 20"><path fill="currentColor" d="M1 3v2h18V3zm0 8h18V9H1zm0 6h18v-2H1z"/></svg>
         </div>
     </header>
+
     <main>
+        <!-- main information section -->
         <section class="main_content">
 
+            <!-- inital product page information -->
             <section class="product_info">
 
+                <!-- product pictures -->
                 <div class="album_imgs">
 
+                    <!-- product name -->
                     <h2 class="text-3xl song_title">family ties</h2>
 
+                    <!-- Large picture -->
                     <div class="main_pic">
                         <img class="rounded-lg" src="./imgs/mel_blue_cover.jpg" alt="The Melodic Blue Album Cover">
                     </div>
 
+                    <!-- Small pictures underneath main -->
                     <div class="side_pics">
                         <div class="sm_pic">
                             <img class="rounded-lg" src="./imgs/mel_blue_cover.jpg" alt="The Melodic Blue Album Cover">
@@ -55,61 +69,93 @@
 
                 </div>
 
+                <!-- Product information -->
                 <div class="album_info">
 
-                    <div class="info_sec">
-                        <h3 class="info_header">Small Header</h3>
-                        <p class="info_paragraph">Info related</p>
+                    <div class="info_sec rounded-lg">
+                        <h3 class="info_header text-2xl">About</h3>
+                        <p class="info_paragraph">The song "family ties" was released August 27, 2021 as the fourth single from the album "the meldoic blue". The song recived two nominations at the 2022 Grammy Awards for Best Rap Song and Best Rap Performance. It won the Grammy for Best Rap Performance. The song went platinum 5x in the United States of America.</p>
                     </div>
 
-                    <div class="info_sec">
-                        <h3 class="info_header">Small Header</h3>
-                        <p class="info_paragraph">Info related</p>
+                    <div class="info_sec rounded-lg">
+                        <h3 class="info_header text-2xl">Featuring. . . </h3>
+                        <span class="artisit_name text-lg slightly_right">Kendrick Lamar</span>
+                        <p class="info_paragraph">"Mother**** that album, f*** that single
+                            Burn that hard drive (Burn that s***)
+                            Ain't nobody safe
+                            When I come, I'm killin' everybody that's outside (Who you with?)
+                            Yeah, Kanye changed his life
+                            But me, I'm still an old-school Gemini (Lil' b****)
+                            Let me jump in this b****"</p>
                     </div>
 
-                    <div class="info_sec">
-                        <h3 class="info_header">Small Header</h3>
-                        <p class="info_paragraph">Info related</p>
+                    <div class="info_sec rounded-lg">
+                        <h3 class="info_header text-2xl">Iconic Verses</h3>
+                        <p class="info_paragraph">"I'm OD in Paris, I'm OD in France
+                            I thought that I told you, I need the advance
+                            Put down your IG and look through my lens
+                            A million to grandma, who did I offend?
+                            The girl of your dreams to me is a fan
+                            I netted ten million and did a lil' dance
+                            I'm ******' the world, I unzip my pants
+                            My uncle G told me that I had a chance
+                            So then I popped out and did it again
+                            And did it again and did it again..." <span class="artisit_name text-lg">- Baby Keem</span></p>
                     </div>
 
                 </div>
 
             </section>
 
+            <!-- Visual divide of space -->
             <div class="divider">
                 <img id="div_img" src="./imgs/layered-steps-haikei.svg" alt="svg divider">
             </div>
 
+            <!-- Showcase other songs from melodic blue album  -->
             <section class="other_songs">
+
+                <!-- Song card -->
                 <div class="song_card rounded-lg">
                     <div class="sm_pic">
                         <img class="rounded-lg" src="./imgs/mel_blue_cover.jpg" alt="The Melodic Blue Album Cover">
                     </div>
-                    <h2 class="text-xl song_title">name</h2>
+                    <h2 class="text-xl song_title">trademark usa</h2>
                     <p class="song_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque sit perspiciatis aliquid sed ipsam amet ipsa reprehenderit nemo iusto soluta nostrum exercitationem consequatur, vero commodi repudiandae aspernatur error dolore voluptates?</p>
+                    <button class="visit_song"><a href="#">See Song</a></button>
                 </div>
+                <!-- Song card -->
                 <div class="song_card rounded-lg">
                     <div class="sm_pic">
                         <img class="rounded-lg" src="./imgs/mel_blue_cover.jpg" alt="The Melodic Blue Album Cover">
                     </div>
-                    <h2 class="text-xl song_title">name</h2>
+                    <h2 class="text-xl song_title">range brothers</h2>
                     <p class="song_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque sit perspiciatis aliquid sed ipsam amet ipsa reprehenderit nemo iusto soluta nostrum exercitationem consequatur, vero commodi repudiandae aspernatur error dolore voluptates?</p>
+                    <button class="visit_song"><a href="#">See Song</a></button>
                 </div>
+                <!-- Song card -->
                 <div class="song_card rounded-lg">
                     <div class="sm_pic">
                         <img class="rounded-lg" src="./imgs/mel_blue_cover.jpg" alt="The Melodic Blue Album Cover">
                     </div>
-                    <h2 class="text-xl song_title">name</h2>
+                    <h2 class="text-xl song_title">16</h2>
                     <p class="song_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque sit perspiciatis aliquid sed ipsam amet ipsa reprehenderit nemo iusto soluta nostrum exercitationem consequatur, vero commodi repudiandae aspernatur error dolore voluptates?</p>
+                    <button class="visit_song"><a href="#">See Song</a></button>
                 </div>
             </section>
-
-            <div class="music_vid">
-                <iframe width="1120" height="630" src="https://www.youtube.com/embed/v6HBZC9pZHQ?si=rUhfUsbaNTuMQqi9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            
+            <!-- Linked YouTube Vid -->
+            <div class="vid_box">
+                <div class="music_vid">
+                    <iframe width="1120" height="630" src="https://www.youtube.com/embed/v6HBZC9pZHQ?si=rUhfUsbaNTuMQqi9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <h2 class="text-3xl vid_title">family ties music video</h2>
             </div>
 
         </section>
     </main>
+
+    <!-- Interesting related information -->
     <footer>
         <div class="social_info">
 
@@ -118,5 +164,6 @@
 
         </div>
     </footer>
+
 </body>
 </html>

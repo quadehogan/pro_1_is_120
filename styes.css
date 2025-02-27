@@ -2,20 +2,22 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    border: 1px solid black;
     font-family: "Arsenal SC", serif;
 }
 
+/* Header Styles */
 .head_content{
     display: flex;
     height: 12vh;
     justify-content: space-between;
+    background-color: hsl(215, 20%, 97%);
 }
 
 .album_name{
     display: flex;
     align-items: center;
     margin-left: 1rem;
+    color: hsl(215, 50%, 10%);
 }
 
 .nav_utils{
@@ -32,6 +34,7 @@
     margin-right: 2rem;
 }
 
+/* Main Body Styles */
 body{
     display: flex;
     flex-direction: column;
@@ -39,6 +42,7 @@ body{
 
 main{
     display: flex;
+    background-color: hsl(215, 20%, 97%);
 }
 
 .main_content{
@@ -54,11 +58,13 @@ main{
     padding-left: 1.5rem;
 }
 
+/* Main Images */
 .album_imgs{
     display: flex;
     flex-direction: column;
     padding: 4rem;
     width: 60%;
+    border: none;
 }
 
 .main_pic{
@@ -82,12 +88,41 @@ main{
     height: auto;
 }
 
+/* Product info styles */
 .album_info{
     display: flex;
     flex-direction: column;
     width: 40%;
+    justify-content: space-around;
+    border: none;
 }
 
+.info_sec{
+    margin-right: 2rem;
+    background-color: hsl(215, 20%, 90%);
+    border: 2px solid hsl(201, 12%, 41%)
+}
+
+.info_header{
+    padding-left: 0.25rem;
+    color: hsl(215, 50%, 10%)
+}
+
+.info_paragraph{
+    padding: 0.25rem 1rem 0.5rem 1rem;
+    color: hsl(215, 50%, 10%)
+}
+
+.artisit_name{
+    color: #4a5e69;
+    border: none;
+}
+
+.slightly_right{
+    padding-left: 0.5rem;
+}
+
+/* Divider styles */
 .divider{
     display: flex;
     flex-direction: column;
@@ -101,6 +136,7 @@ main{
     object-fit: cover;
 }
 
+/* Song Card Styles */
 .other_songs{
     display: flex;
     margin-top: 2rem;
@@ -111,15 +147,43 @@ main{
     display: flex;
     width: 25%;
     flex-direction: column;
+    background-color: hsl(215, 20%, 90%);
+    border: 2px solid hsl(201, 12%, 41%)
+}
+
+.song_card:hover{
+    box-shadow: 0.5rem 0.5rem 1rem hsl(215, 10%, 50%);
+    transition: 0.3s ease;
+}
+
+.song_title{
+    color: hsl(215, 50%, 10%)
 }
 
 .song_p{
     margin: 0.2rem 0.2rem 0.2rem 0.5rem;
     border: none;
+    color: hsl(215, 50%, 10%);
+}
+
+.visit_song{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0.4rem;
+}
+
+/* Linked Music Video */
+.vid_box{
+    display: flex;
+    flex-direction: column;
 }
 
 .music_vid{
     display: flex;
     justify-content: center;
     margin-top: 5rem;
+}
+
+.vid_title{
+    margin: 1rem 1rem 1rem 11rem;
 }
