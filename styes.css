@@ -7,6 +7,7 @@
 
 /* Header Styles */
 .head_content{
+    position: relative;
     display: flex;
     height: 12vh;
     justify-content: space-between;
@@ -23,6 +24,7 @@
 .nav_utils{
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .searchbar{
@@ -33,6 +35,53 @@
 #menu_button{
     margin-right: 2rem;
 }
+
+/* Popout styles */
+#popup{
+    background-color: hsl(203, 11%, 44%);
+    position: fixed;
+    top: 0;
+    left: 75%;
+    margin: 0;
+    height: 100vh;
+    width: 22rem;
+    box-shadow: -0.1rem 0 0.9rem rgba(0, 0, 0, 0.2);
+}
+
+#popup::backdrop {
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.pop_op{
+    color: hsla(220, 20%, 97%, 0.655);
+}
+
+.close_pop:hover {
+    box-shadow: 0.1rem 0.1rem 0.2rem hsla(220, 20%, 60%, 0.466);
+}
+
+.pop_cont_box{
+    display: flex;
+    height: 4rem;
+    border-bottom: 1px solid hsla(220, 20%, 97%, 0.655);
+    align-items: center;
+    padding-left: 1.5rem;
+}
+
+.pop_list{
+    background-color: #65747d;
+    color: hsla(220, 20%, 97%, 0.655);
+}
+
+#options{
+    color: hsla(220, 20%, 97%, 0.655);
+}
+
+.album_songs{
+    color: hsla(220, 20%, 97%, 0.655);
+    font-size: 1rem;
+}
+
 
 /* Main Body Styles */
 body{
@@ -58,6 +107,24 @@ main{
     padding-left: 1.5rem;
 }
 
+.heart-container{
+    position: absolute;
+    top: 86%;
+    left: 86%;
+}
+
+.heart-container:hover{
+    cursor: pointer;
+}
+
+.visible{
+    display: block;
+}
+
+.hidden{
+    display: none;
+}
+
 /* Main Images */
 .album_imgs{
     display: flex;
@@ -71,6 +138,7 @@ main{
     display: flex;
     overflow: hidden;
     padding: 1rem 3rem 3rem 3rem;
+    position: relative;
 }
 
 .side_pics{
@@ -156,6 +224,7 @@ main{
     flex-direction: column;
     background-color: hsl(215, 20%, 90%);
     border: 2px solid hsl(201, 12%, 41%);
+    height: 35rem;
 }
 
 .card_pic_container{
@@ -163,7 +232,7 @@ main{
     overflow: hidden;
     padding: 1rem;
     width: 90%;
-    height: 40%;
+    height: 50%;
     margin: 0.5rem 1rem 0rem 1rem;
 }
 
